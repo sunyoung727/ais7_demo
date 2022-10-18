@@ -65,3 +65,8 @@ c = alt.Chart(data).mark_circle().encode(x='mpg', y='weight', color='origin',
 
 st.altair_chart(c, use_container_width=True)
 
+a = alt.Chart(data).mark_circle().encode(x='weight', y='horsepower', color='cylinders'
+    ).properties(title="cylinder별 무게에 따른 마력의 관계")
+
+st.altair_chart(a, use_container_width=True)
+

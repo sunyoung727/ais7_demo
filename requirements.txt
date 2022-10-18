@@ -6,7 +6,4 @@ plotly
 seaborn
 matplotlib
 koreanize_matplotlib
-d
-title
-Tooltip
 altair

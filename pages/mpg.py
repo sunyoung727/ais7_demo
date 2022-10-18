@@ -1,6 +1,3 @@
-from this import d
-from turtle import title
-from folium import Tooltip
 import streamlit as st
 import pandas as pd
 import seaborn as sns

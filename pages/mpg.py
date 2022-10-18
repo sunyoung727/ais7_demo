@@ -60,6 +60,8 @@ st.pyplot(fig)
 pxh = px.histogram(data, x='origin', title="지역별 자동차 연비 데이터 수")
 st.plotly_chart(pxh)
 
-c = alt.Chart(data).mark_circle().encode(x='mpg', y='weight', color='origin', tooltip=['weight', 'origin'])
+c = alt.Chart(data).mark_circle().encode(x='mpg', y='weight', color='origin', 
+    tooltip=['weight', 'origin']).properties(title="지역별 mpg에 따른 weight 관계")
 
 st.altair_chart(c, use_container_width=True)
+
